@@ -8,8 +8,36 @@
 
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <em>Calculadora</em>
+    </header>
+
+    <main>
+        <div class="boxAllContent">
+            <div class="boxFormsContent">
+                <div class="formClientContent">
+                    <form>
+                        <!--Label dos Radio-->
+                        <label for="radioCelcius">Fahrenheit para Celcius</label>
+                        <input type="radio" id="selectValueFahrenheit" name="selectValue">
+                        <label for="radioCelcius">Celcius para Fahrenheit</label>
+                        <input type="radio" id="selectValueCelcius" name="selectValue">
+
+                        <!--Label dos valores-->
+                        <label for="weather"></label>
+                        <input type="text" id="weathertValue" name="weathertValue" placeholder="insira um valor">
+
+                        <!--Botão-->
+                        <button type="button" onclick="calcular()">calcular</button>
+                    </form>    
+                </div>
+                <div class="clientAnswer">
+                    <span id="answer">resposta aqui</span><span id="medida"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer></footer>
 
     <script type="text/javascript" src="css&jsc/script.js"></script>

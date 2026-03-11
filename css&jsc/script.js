@@ -5,21 +5,23 @@ function calcular(){
 
     if (selectFahrenheitTo != true){
         if (selectCelciusTo != true){
-            alert("selecione uma conversão")
+            document.getElementById('consoleCheckup').innerHTML = "selecione uma conversão"
         }else {
             if (weatherValue == ""){
-                alert("defina um valor em celcius")
+                document.getElementById('consoleCheckup').innerHTML = "defina um valor em celsius"
             }else {
                 weather = (weatherValue * (9 / 5)) + 32;
-                document.getElementById('answer').innerHTML = weather;
+                document.getElementById('answer').value = weather;
+                document.getElementById('medida').innerHTML = "°F";
             }
         }
     }else {
         if (weatherValue == ""){
-            alert("defina um valor em fahrenheit")
+            document.getElementById('consoleCheckup').innerHTML = "defina um valor em fahrenheit"
         }else {
             weather = (weatherValue - 32) / (9 / 5);
-            document.getElementById('answer').innerHTML = weather;
+            document.getElementById('answer').value = weather;
+            document.getElementById('medida').innerHTML = "°C";
         }
     }
 }

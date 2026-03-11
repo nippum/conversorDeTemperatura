@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0em;
+}
+:root{
+    /*Soft Pink Delight*/
+    --soft-blush: #ffe5ec;
+    --pastel-pink: #ffc2d1;
+    --cherry-blossom: #ffb3c6;
+    --cotton-candy: #ff8fab;
+    --petal-rouge: #fb6f92;
+
+    /*text color*/
+    --all-text-color: #0a0605;
+}
+body{
+    margin: 0em auto;
+    width: 40%;
+    background-color: var(--soft-blush);
+    color: var(--all-text-color);
+}
+
+/*header*/
+#header{
+    display: flex;
+    margin: 1em 0em 0em 0em;
+    text-align: center;
+    flex-direction: column;
+    padding: 2em 0em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: var(--cherry-blossom);
+}
+#nav{
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+#nav>a{
+    text-decoration: underline;
+    color: var(--all-text-color);
+}
+
+.objetivoProjeto>p{
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+}
+.boxAllContent{
+    border-left: 0.5em var(--cherry-blossom) solid;
+    border-right: 0.5em var(--cherry-blossom) solid;
+    padding: 1em;
+    background-color: var(--pastel-pink);
+}
+.boxAllContent>hr{
+    color: var(--cherry-blossom);
+
+}
+.formClientContent{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.labelRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0em 1em 0em;
+    text-align: center;
+}
+.labelInsertValue>input{
+    text-align: center;
+    margin: 1em;
+    width: 30%;
+    padding: 0.6em;
+    background-color: var(--all-text-color);
+    font-size: 1.3em;
+    color: var(--soft-blush);
+    border: var(--soft-blush) 0.2em solid;
+}
+.labelButton>button{
+    background-color: var(--cotton-candy);
+    border-color: var(--petal-rouge);
+    padding: 0.6em;
+    width: 6em;
+    border-radius: 1em;
+}
+.clientAnswer{
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+.clientAnswer>input{
+    text-align: center;
+    width: 30%;
+    border: 0.15em var(--soft-blush) solid;
+    padding: 0.4em 0.3em;
+    background-color: var(--all-text-color);
+    color: var(--soft-blush);
+    font-size: 0.8em;
+    text-overflow: ellipsis;
+}
+.logConsole>p{
+    color: red;
+    text-align: center;
+}
+
+#footer{
+    background-color: var(--cherry-blossom);
+    text-align: center;
+    padding: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    font-size: 0.8em;
+}
+.criadorPorjeto>em>a{
+    text-decoration: underline;
+    color: var(--all-text-color);
+}
+.idealizadorProjeto>em>a{
+    text-decoration: underline;
+    color: var(--all-text-color);
+}
